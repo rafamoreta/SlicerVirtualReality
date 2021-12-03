@@ -40,6 +40,8 @@ add_subdirectory(VirtualReality)
 
 #-----------------------------------------------------------------------------
 set(SlicerVirtualReality_CUSTOM_CONFIG "####### Expanded from \@SlicerVirtualReality_CUSTOM_CONFIG\@ #######
+set(vtkRenderingVR_DIR \"${vtkRenderingVR_DIR}\")
+find_package(vtkRenderingVR REQUIRED)
 set(vtkRenderingOpenVR_DIR \"${vtkRenderingOpenVR_DIR}\")
 find_package(vtkRenderingOpenVR REQUIRED)
 list(INSERT CMAKE_MODULE_PATH 0 \${vtkRenderingOpenVR_CMAKE_MODULE_PATH})
